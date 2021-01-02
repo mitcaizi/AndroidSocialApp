@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:icon="@drawable/exit_icon"
+        app:showAsAction="ifRoom"
+        android:id="@+id/signout"
+        android:title="Sign Out"
+        >
+    </item>
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/newUser"
+        android:title="New User">
+
+    </item>
+
+    <item android:icon="@drawable/profile_icon"
+        app:showAsAction="ifRoom"
+        android:id="@+id/edit_profile"
+        android:title="Edit Profile">
+    </item>
+
+</menu>

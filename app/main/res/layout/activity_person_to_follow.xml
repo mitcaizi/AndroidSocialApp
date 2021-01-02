@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/persontofollowpicture"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"
+            android:paddingTop="25dp"
+            android:src="@drawable/robot"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+        <TextView
+            android:id="@+id/persontofollowname"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/un_follow"
+                    android:id="@+id/un_followbtn"
+                    android:layout_gravity="left"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+                <TextView
+                    android:text="Follow"
+                     android:id="@+id/Followbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/persontofollowemail"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+        <TextView android:id="@+id/persontofollowphone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/persontofollowrecycerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

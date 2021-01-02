@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="splashBackground">#F0C320</color>
+    <color name="offwhite">#f3f5f6</color>
+    <color name="grey">#3C3F55</color>
+    <color name="transparent">#00000000</color>
+    <color name="robotbackground">#F0C320</color>
+    <color name="brown">#663300</color>
+</resources>

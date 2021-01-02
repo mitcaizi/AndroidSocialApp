@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    tools:context=".PhotoPreview">
+    <ImageView
+    android:id="@+id/previewImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <EditText
+        android:hint="Description"
+        android:id="@+id/description"
+        app:layout_constraintTop_toBottomOf="@id/previewImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="SHARE"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:background="@drawable/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Publish"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
